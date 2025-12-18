@@ -18,21 +18,31 @@ Die Kommunikation läuft in Echtzeit über WebSockets.
 - **Qualität/Dev:** Prettier, ESLint, (optional Vitest/Jest)
 
 ## Ordnerstruktur
-
-📦 schiffe-versenken
+📦 schiffe-versenken-ms4
 ┣ 📂 server → Socket.IO Server (TypeScript)
 ┃ ┣ 📜 index.ts            → Server, Spiellogik, GameState, Socket.IO Events
 ┃ ┣ 📜 action-log.ndjson   → Action-Log (Grundlage für Persistenz)
-┃ ┗ 📜 package.json
+┃ ┣ 📜 package.json
+┃ ┣ 📜 package-lock.json
+┃ ┗ 📜 tsconfig.json
 ┣ 📂 client → React Frontend (Vite)
-┃ ┣ 📂 src                 → React-Quellcode
 ┃ ┣ 📂 public
-┃ ┗ 📜 socket.ts           → Socket.IO Client-Verbindung
+┃ ┣ 📂 src                 → React-Quellcode
+┃ ┃ ┗ 📜 socket.ts         → Socket.IO Client-Verbindung
+┃ ┣ 📜 index.html
+┃ ┣ 📜 package.json
+┃ ┣ 📜 package-lock.json
+┃ ┣ 📜 tsconfig.json
+┃ ┣ 📜 tsconfig.app.json
+┃ ┣ 📜 tsconfig.node.json
+┃ ┗ 📜 vite.config.ts
 ┣ 📂 docs
+┃ ┣ 📜 Kommunikation.md
 ┃ ┣ 📜 Meilenstein_1_*.pdf
 ┃ ┣ 📜 Meilenstein_2_*.pdf
 ┃ ┣ 📜 Meilenstein_3_*.pdf
 ┃ ┗ 📜 Meilenstein_4_*.pdf
+┣ 📜 .gitignore
 ┗ 📜 README.md
 
 
