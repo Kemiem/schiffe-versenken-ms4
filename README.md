@@ -18,6 +18,7 @@ Die Kommunikation läuft in Echtzeit über WebSockets.
 - **Qualität/Dev:** Prettier, ESLint, (optional Vitest/Jest)
 
 ## Ordnerstruktur
+```text
 📦 schiffe-versenken-ms4
 ┣ 📂 server → Socket.IO Server (TypeScript)
 ┃ ┣ 📜 index.ts            → Server, Spiellogik, GameState, Socket.IO Events
@@ -44,6 +45,8 @@ Die Kommunikation läuft in Echtzeit über WebSockets.
 ┃ ┗ 📜 Meilenstein_4_*.pdf
 ┣ 📜 .gitignore
 ┗ 📜 README.md
+```
+
 
 
 ### Kurzbeschreibung
